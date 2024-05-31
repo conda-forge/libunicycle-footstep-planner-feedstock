@@ -1,5 +1,5 @@
 {% set name = "libunicycle-footstep-planner" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name }}
@@ -7,16 +7,17 @@ package:
 
 source:
   - url: https://github.com/robotology/unicycle-footstep-planner/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: f208c45296bc2a56db6f61cdcf7d133a82f62c622d926f153ccf6e6891078a5f
+    sha256: 252b84f99918ead452bc0bc70581b3ffe8778ae6b5b67de01cb085f59583c1d6
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - pkg-config
