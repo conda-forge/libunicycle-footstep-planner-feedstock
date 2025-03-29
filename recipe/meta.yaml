@@ -36,8 +36,8 @@ test:
 
 about:
   home: https://github.com/robotology/unicycle-footstep-planner
-  license: GPL-2.0-only
-  license_file: LICENSE.txt
+  license: BSD-3-Clause
+  license_file: LICENSE
   summary: Unicycle-based FootStep Planner for humanoid robots.
 
 extra:
